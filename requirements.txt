@@ -1,0 +1,4 @@
+Pillow
+pypdfium2
+pypdf
+reportlab

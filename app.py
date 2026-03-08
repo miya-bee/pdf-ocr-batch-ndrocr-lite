@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 PDF / 画像 OCR 付加バッチ（日本語向け / NDLOCR-Lite版）
-[v62 original-PDF overlay fix: detach shared /Contents before per-page invisible-text merge]
+[v63 original-PDF overlay fix: detach shared /Contents before per-page invisible-text merge]
 - 指定ファイルまたは指定フォルダ内の PDF / 画像ファイルを処理
 - PDF は既にテキスト層がある場合スキップ
 - PDF はページ画像へ分解し、NDLOCR-Lite を --sourcedir で実行
@@ -2593,7 +2593,7 @@ class RuntimeSupport:
                 problems.append(f"- 指定された {PYTHON_EXECUTABLE_LABEL} を利用できません: {e}")
             else:
                 problems.append(
-                    "- {PYTHON_EXECUTABLE_LABEL} が見つかりません。"
+                    f"- {PYTHON_EXECUTABLE_LABEL} が見つかりません。"
                     " 実行ファイルパスを指定するか、PATH の通った場所に配置してください。"
                     f" ({e})"
                 )
